@@ -61,3 +61,4 @@ h2{font-size:1.3rem;color:var(--ink);margin:34px 0 10px}
 .hoy{background:var(--ink);color:#fff;border-radius:16px;padding:22px 24px;margin-top:6px}.hoy p{margin:0}.hoy-t{color:#c8d6e6;font-size:.95rem}.hoy-r{font-size:clamp(1.6rem,6vw,2.6rem);font-weight:800;line-height:1.15;margin:6px 0 8px!important}.hoy-m{color:#c8d6e6}.hoy.si{background:linear-gradient(120deg,#0e2440,#7a4b00)}
 .tb tr.finde th,.tb tr.finde td{color:var(--mut)}.irr{color:#b3261e;font-weight:700}.largos{padding-left:18px}.largos li{margin:6px 0}
 @media(max-width:700px){.tb th,.tb td{padding:8px 8px;font-size:.92rem}}
+.av-red{position:absolute;top:8px;right:10px;font-size:.68rem;letter-spacing:.02em;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.14);color:rgba(255,255,255,.85);z-index:1}

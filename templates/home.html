@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="hoy" data-hoy aria-live="polite">
+<p class="hoy-t" data-hoy-t>¿Hoy es feriado?</p>
+<p class="hoy-r" data-hoy-r>&nbsp;</p>
+<p class="hoy-m" data-man>&nbsp;</p>
+</section>
+<section class="prox prox-f" data-prox>
+<h2>Próximo feriado</h2>
+<p class="pc"><b data-pf-n>{{ PROX.nombre }}</b>: <span data-pf-f>{{ PROX.txt }}</span></p>
+<p class="cd">Faltan <span data-cd>…</span></p>
+</section>
+{% include "_avisos.html" %}
+{% if QUEDAN %}<section><h2>Feriados que quedan en 2026</h2>{% with lista=QUEDAN %}{% include "_tabla.html" %}{% endwith %}</section>{% endif %}
+<section><h2>Feriados 2027</h2>{% with lista=ANIOS[2027] %}{% include "_tabla.html" %}{% endwith %}
+<p><a href="/feriados-2027/">Ver los fines de semana largos y feriados regionales de 2027</a></p></section>
+{% endblock %}

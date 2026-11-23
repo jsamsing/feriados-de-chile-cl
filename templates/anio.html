@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block main %}
+<section><h2>Lista de feriados {{ p.anio }}</h2>{% with lista=ANIOS[p.anio] %}{% include "_tabla.html" %}{% endwith %}
+<p class="mut">Total: {{ ANIOS[p.anio]|length }} feriados nacionales, {{ ANIOS[p.anio]|selectattr("irr")|list|length }} irrenunciables para el comercio.</p></section>
+{% if LARGOS[p.anio] %}<section><h2>Fines de semana largos {{ p.anio }}</h2><ul class="largos">{% for l in LARGOS[p.anio] %}<li><b>{{ l.rango }}</b> · {{ l.motivo }} ({{ l.dias }} días)</li>{% endfor %}</ul></section>{% endif %}
+{% if REG.get(p.anio) %}<section><h2>Feriados regionales {{ p.anio }}</h2><ul>{% for f in REG[p.anio] %}<li><b>{{ f.txt }}</b>: {{ f.nombre }} (solo {{ f.donde }})</li>{% endfor %}</ul></section>{% endif %}
+<section><h2>Qué significa feriado irrenunciable</h2><p>Los feriados irrenunciables (1 de enero, 1 de mayo, 18 y 19 de septiembre y 25 de diciembre) son días en que los trabajadores del comercio no pueden ser obligados a trabajar, según la Ley 19.973, salvo las excepciones que la misma ley indica.</p></section>
+{% endblock %}

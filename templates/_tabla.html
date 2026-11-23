@@ -1,0 +1,3 @@
+<table class="tb"><thead><tr><th scope="col">Fecha</th><th scope="col">Feriado</th><th scope="col">Tipo</th></tr></thead><tbody>
+{% for f in lista %}<tr{% if f.finde %} class="finde"{% endif %}><th scope="row">{{ f.txt }}</th><td>{{ f.nombre }}{% if f.nota and not f.irr %}<br><small class="mut">{{ f.nota }}</small>{% endif %}</td><td>{{ f.tipo|capitalize }}{% if f.irr %}<br><small class="irr">Irrenunciable</small>{% endif %}</td></tr>
+{% endfor %}</tbody></table>

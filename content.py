@@ -5,7 +5,7 @@ adicional del 17 de septiembre, Ley 21.357 Pueblos Indígenas). Revisar con cada
 DOMINIO = "https://feriados-de-chile.cl"
 MARCA = "Feriados de Chile"
 REVISADO = "2026-11-23"
-GA4 = ""
+GA4 = "G-02ZCD8D2RR"
 INDEXNOW_KEY = "3e9a7d1c5b2f4e8a9c0d6b1a7f3e2d5c"
 
 I = "irrenunciable"

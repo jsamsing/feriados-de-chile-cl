@@ -82,7 +82,7 @@ PAGINAS = [
          ("¿Navidad 2026 es fin de semana largo?", "Sí: el 25 de diciembre cae viernes, así que se descansa de viernes a domingo. Es feriado irrenunciable para el comercio."),
      ]},
     {"path": "/privacidad/", "tpl": "legal.html", "noindex": True,
-     "title": "Privacidad y cookies de Feriados de Chile",
-     "desc": "Cómo trata Feriados de Chile los datos de quienes visitan el sitio: medición de visitas con consentimiento y sin datos personales.",
-     "h1": "Privacidad y cookies"},
+     "title": "Privacidad y datos personales de Feriados de Chile",
+     "desc": "Cómo trata Feriados de Chile tus datos según la Ley 21.719: sin registro, medición de visitas solo con tu consentimiento y cómo ejercer tus derechos.",
+     "h1": "Privacidad y datos personales"},
 ]

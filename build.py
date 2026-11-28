@@ -122,7 +122,7 @@ def main():
     (DIST / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{u}</loc><lastmod>{C.REVISADO}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     (DIST / "robots.txt").write_text("User-agent: *\nAllow: /\n\n" + "".join(f"User-agent: {b}\nDisallow: /\n\n" for b in ["GPTBot", "CCBot", "Google-Extended", "anthropic-ai", "ClaudeBot", "Bytespider", "meta-externalagent", "Applebot-Extended"])
-        + "Content-Signal: search=yes, ai-input=yes, ai-train=no\n\nSitemap: " + C.DOMINIO + "/sitemap.xml\n")
+        + "\nSitemap: " + C.DOMINIO + "/sitemap.xml\n")
     nl = chr(10)
     lst = "".join("- " + f["txt"] + ": " + f["nombre"] + (" (irrenunciable)" if f["irr"] else "") + nl for f in anios[2027])
     pags = "".join("- [" + p["h1"] + "](" + C.DOMINIO + p["path"] + "): " + p["desc"] + nl for p in C.PAGINAS if not p.get("noindex"))
